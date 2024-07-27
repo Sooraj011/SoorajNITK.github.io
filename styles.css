@@ -1,46 +1,179 @@
+/* General Styles */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
+    background-color: #000; /* Set the entire page background to black */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
-    background: #333;
+    background: #007bff;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: relative;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
+/* Home Section Styles */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem;
+    background: #fff; /* White background for the content area */
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
+.profile-education-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.profile-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 45vw; /* Increased width for a larger profile picture */
+    height: auto;
+    max-width: 250px; /* Increased max width */
+    object-fit: cover;
+}
+
+.education-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.education-item {
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.logo {
+    width: 150px; /* Increased width for a larger logo */
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.education-info {
+    margin-top: 0.5rem;
+}
+
+.education-info h3 {
+    margin: 0;
+    font-size: 1.2rem; /* Adjusted font size */
+}
+
+.education-info p {
+    margin: 0.2rem 0;
+}
+
+.dates {
+    font-style: italic;
+}
+
+/* Welcome Message */
+.welcome-message {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.welcome-message h2 {
+    font-size: 1.8rem; /* Adjusted font size */
+    margin: 0;
+}
+
+.welcome-message p {
+    font-size: 1rem; /* Adjusted font size */
+}
+
+/* Navigation Boxes */
+.nav-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 1rem; /* Adjusted margin-top */
+}
+
+.nav-box {
+    background: #007bff;
+    color: #fff;
+    padding: 1rem 1.5rem; /* Adjusted padding */
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem; /* Adjusted font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.nav-box:hover {
+    background: #0056b3;
+}
+
+/* Footer Styles */
 footer {
-    background: #333;
+    background: #007bff;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto;
+    display: none; /* Hide footer if not needed */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 50vw; /* Adjust width for smaller screens */
+        max-width: 250px; /* Increased max width */
+    }
+
+    .logo {
+        width: 120px; /* Adjust width for smaller screens */
+    }
+
+    .welcome-message h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-message p {
+        font-size: 0.9rem;
+    }
+
+    .nav-box {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }

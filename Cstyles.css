@@ -1,0 +1,132 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light grey background for the entire page */
+    color: #333; /* Dark grey text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #1e1e1e; /* Dark grey background for header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #0066cc; /* Blue border below the header */
+}
+
+header h1 {
+    margin: 0;
+    color: #fff; /* White text color for the header */
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0; /* Added top margin for spacing */
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between navigation items */
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #0066cc; /* Blue background for navigation links */
+    color: #fff; /* White text color for navigation links */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #004d99; /* Darker blue background on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff; /* White background for sections */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for a subtle 3D effect */
+}
+
+h2 {
+    margin-top: 0; /* Remove default top margin for h2 */
+    color: #0066cc; /* Blue text color for section titles */
+}
+
+/* Contact Section Styling */
+.contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-item {
+    background-color: #1e1e1e; /* Dark grey background for contact items */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    color: #fff; /* White text color for contact items */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.contact-item:hover {
+    transform: scale(1.1); /* Slightly enlarge the contact item on hover */
+    background-color: #333; /* Slightly darker background on hover */
+}
+
+.contact-item i {
+    font-size: 40px; /* Large icon size */
+    margin-bottom: 10px;
+}
+
+.contact-item span, .contact-item a {
+    display: block;
+    font-size: 16px; /* Regular text size for contact details */
+    font-weight: bold;
+    color: #fff; /* White text color for contact details */
+    text-decoration: none; /* Remove underline for links */
+}
+
+.contact-item a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1e1e1e;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}

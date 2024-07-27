@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Sooraj Dhanwant</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Pstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,28 +14,37 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
                 <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-category">
-            <h3>Machine Learning</h3>
-            <ul>
-                <li><strong>Movie Recommendation System</strong> - A data-driven application using collaborative filtering to suggest movies based on user preferences and viewing history.</li>
-            </ul>
-        </div>
-        <div class="project-category">
-            <h3>Deep Learning</h3>
-            <ul>
-                <li><strong>Number Plate Detection and Recognition using CNN</strong> - Developed a CNN model to detect and recognize license plate numbers from images and video streams.</li>
-                <li><strong>Chat with PDF using LangChain</strong> - Implemented a chatbot using LangChain for efficient querying and retrieval of information from PDF documents.</li>
-            </ul>
+        <div class="projects-content">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Movie Recommendation System</h3>
+                <p><strong>Technologies:</strong> HTML, CSS, Python, Machine Learning</p>
+                <p><strong>Duration:</strong> Aug–Nov 2023</p>
+                <p>This is a data-driven application that leverages a collaborative filtering algorithm to suggest movies to users based on their preferences and viewing history. It enhances user experience, increasing engagement and retention.</p>
+            </div>
+            <div class="project">
+                <h3>Number Plate Detection and Recognition using CNN</h3>
+                <p><strong>Technologies:</strong> Deep Learning, OpenCV, TensorFlow</p>
+                <p><strong>Duration:</strong> Jan–Apr 2024</p>
+                <p>Developed a convolutional neural network (CNN) model to detect and recognize license plate numbers from images and video streams. This project has potential applications in automated toll collection, traffic monitoring, and law enforcement.</p>
+            </div>
+            <div class="project">
+                <h3>Chat with PDF using LangChain</h3>
+                <p><strong>Technologies:</strong> LLM, OpenAI, API</p>
+                <p><strong>Duration:</strong> May–July 2024</p>
+                <p>Developed a chatbot using LangChain that interacts with PDF documents, enabling users to query and retrieve specific information efficiently. Utilized AstraDB for storing and managing PDF data.</p>
+            </div>
         </div>
     </section>
+
     <footer>
         <p>&copy; 2024 Sooraj Dhanwant. All rights reserved.</p>
     </footer>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Sooraj Dhanwant</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Rstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -19,54 +20,87 @@
             </ul>
         </nav>
     </header>
+
     <section id="resume">
-        <h2>Resume</h2>
-        <a href="https://drive.google.com/uc?id=1esf-mqiHiPXOdbqnLlAAL76eGX7otEVl&export=download" download>Download My Resume</a>
-        <h3>Education</h3>
-        <p><strong>National Institute of Technology, Karnataka</strong><br>
-           Bachelor of Technology in Information Technology<br>
-           2020–2024</p>
-        <p><strong>Jawahar Navodaya Vidyalaya, Gadag</strong><br>
-           Post University Course and Pre-matriculation<br>
-           2013–2020</p>
-        <h3>Technical/Soft Skills</h3>
-        <p><strong>Languages/Database:</strong> C/C++, Python, Java, SQL</p>
-        <p><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Django, AWS</p>
-        <p><strong>AI and Machine Learning:</strong> Python for NLP and AI, Deep Learning, LLMs, TensorFlow, SciKit Learn, Matplotlib</p>
-        <p><strong>Integration and APIs:</strong> Unified API understanding, third-party software integration</p>
-        <p><strong>Version Control Tools and IDEs:</strong> Visual Studio Code, Jupyter Notebook, Google Colab, Git</p>
-        <p><strong>Data Management:</strong> Relational databases, MySQL, PowerBI</p>
-        <p><strong>Core Software Engineering Skills:</strong> Data Structures and Algorithms, OOPS</p>
-        <p><strong>Soft Skills:</strong> Problem-Solving, Quick Learner, Leadership, Flexibility, Team Collaboration, Communication Skills</p>
-        <h3>Experience</h3>
-        <p><strong>Research Intern - Customer Sentiment Analysis—NLP, Machine Learning</strong><br>
-           May 2023–July 2023</p>
-        <ul>
-            <li>Created a website using a Naive Bayes model to classify customer reviews as positive or negative.</li>
-            <li>Implemented machine learning techniques, achieving an accuracy rate of 80% for sentiment prediction.</li>
-            <li>Leveraged insights derived from sentiment analysis to understand customer sentiments on specific products, allowing the implementation of actionable strategies based on sentiment analysis results to enhance customer satisfaction.</li>
-        </ul>
-        <h3>Projects</h3>
-        <ul>
-            <li>Movie Recommendation System - Description</li>
-            <li>Number Plate Detection and Recognition using CNN - Description</li>
-            <li>Chat with PDF using LangChain - Description</li>
-        </ul>
-        <h3>Work Approach and Capabilities</h3>
-        <ul>
-            <li>Ability to manage deadlines and adapt to changing requirements.</li>
-            <li>Good interpersonal and multi-tasking skills.</li>
-            <li>Eagerness to learn and grow in a fast-paced environment.</li>
-            <li>Ability to work both independently and collaboratively in a team environment.</li>
-            <li>Hands-on familiarity with Microsoft Excel/Access and PowerPoint.</li>
-        </ul>
-        <h3>Extracurricular Activities</h3>
-        <ul>
-            <li><strong>Incident’24: Chief Co-ordinator</strong> - Successfully organized and managed the annual cultural fest, ensuring smooth execution and high participant engagement.</li>
-            <li><strong>Kannada Vedike: Chief Executive</strong> - Led the Kannada cultural club, promoting regional culture through various events and activities.</li>
-            <li><strong>Engineer’23: Publicity Head</strong> - Spearheaded the publicity campaigns for the annual technical fest, significantly increasing event visibility and participation.</li>
-        </ul>
+        <div class="resume-content">
+            <h2>Resume</h2>
+            <p>Download my detailed resume using the link below:</p>
+            <a href="https://drive.google.com/uc?id=1esf-mqiHiPXOdbqnLlAAL76eGX7otEVl&export=download" class="resume-link" download>
+                <i class="fas fa-download"></i> Download My Resume
+            </a>
+            <div class="resume-details">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <h4>National Institute of Technology, Karnataka</h4>
+                    <p>Bachelor of Technology in Information Technology (2020–2024)</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Jawahar Navodaya Vidyalaya, Gadag</h4>
+                    <p>Post University Course and Pre-matriculation (2013–2020)</p>
+                </div>
+
+                <h3>Experience</h3>
+                <div class="resume-item">
+                    <h4>Research Intern</h4>
+                    <p>Customer Sentiment Analysis—NLP, Machine Learning (May 2023–July 2023)</p>
+                    <ul>
+                        <li>Created a website using a Naive Bayes model to classify customer reviews as positive or negative.</li>
+                        <li>Implemented machine learning techniques, achieving an accuracy rate of 80 percent for sentiment prediction.</li>
+                        <li>Leveraged insights derived from sentiment analysis to understand customer sentiments on specific products.</li>
+                    </ul>
+                </div>
+
+                <h3>Projects</h3>
+                <div class="resume-item">
+                    <h4>Movie Recommendation System</h4>
+                    <p>Aug–Nov 2023</p>
+                    <ul>
+                        <li>Developed a data-driven application that suggests movies to users based on their preferences and viewing history.</li>
+                        <li>Enhanced user experience and engagement through personalized content.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Number Plate Detection and Recognition using CNN</h4>
+                    <p>Jan–Apr 2024</p>
+                    <ul>
+                        <li>Developed a CNN model to detect and recognize license plate numbers from images and video streams.</li>
+                        <li>Utilized Python, OpenCV, and TensorFlow for image processing and neural network training.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Chat with PDF using LangChain</h4>
+                    <p>May–July 2024</p>
+                    <ul>
+                        <li>Implemented a chatbot using LangChain to interact with PDF documents.</li>
+                        <li>Utilized AstraDB for scalable storage and efficient retrieval of document content.</li>
+                    </ul>
+                </div>
+
+                <h3>Work Approach and Capabilities</h3>
+                <ul>
+                    <li>Ability to manage deadlines and adapt to changing requirements.</li>
+                    <li>Good interpersonal and multi-tasking skills.</li>
+                    <li>Eagerness to learn and grow in a fast-paced environment.</li>
+                    <li>Ability to work both independently and collaboratively in a team environment.</li>
+                </ul>
+
+                <h3>Extracurricular Activities</h3>
+                <div class="resume-item">
+                    <h4>Incident’24: Chief Co-ordinator</h4>
+                    <p>Successfully organized and managed the annual cultural fest.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Kannada Vedike: Chief Executive</h4>
+                    <p>Led the Kannada cultural club, promoting regional culture through various events.</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Engineer’23: Publicity Head</h4>
+                    <p>Spearheaded publicity campaigns for the annual technical fest, increasing event visibility.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
     <footer>
         <p>&copy; 2024 Sooraj Dhanwant. All rights reserved.</p>
     </footer>
